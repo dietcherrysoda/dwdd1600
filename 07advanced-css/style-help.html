@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Brigit Mejia">
+    <meta name="description" content="Provides modest Fashion Style Inspiration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="angel.css">
+    <title>Angel Beach: Fashion & Style Inspiration</title>
+</head>
+
+<body>
+    <!-- start the page header -->
+    <header>
+        <img src="images/angel-beach-logo.png" alt="angel beach curvise handwriting logo" width="100" height="56">
+        <span>Angel Beach</span>
+    </header>
+
+    <!-- start the page navagation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Fashion & Style</a></li>
+            <li><a href="style-inspo.html">Style Inspiration</a></li>
+            <li class="active"><a href="style-help.html">Styling Help</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Styling Help Request</h1>
+        <form method="get" class="StyleHelp" action="thanks.html">
+
+            <fieldset>
+                <legend>Basic Info</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Phone Number*<input type="tel" name="phone" required></label>
+                <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>The Occasion or Purpose</legend>
+                <label><input type="radio" name="purpose" value="chosen">Everyday/Casual</label>
+                <label><input type="radio" name="purpose" value="chosen">Church or Worship</label>
+                <label><input type="radio" name="purpose" value="chosen">School or College</label>
+                <label><input type="radio" name="purpose" value="chosen">Special Occasion (wedding, event,
+                    etc.)</label>
+                <label><input type="radio" name="purpose" value="chosen">Vacation/Travel</label>
+                <label><input type="radio" name="purpose" value="chosen">Other (please specify)</label>
+                <textarea name="other"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Style Preferences (check all that apply)</legend>
+                <label><input type="checkbox" name="style" value="feminine">Feminine</label>
+                <label><input type="checkbox" name="style" value="classic">Classic</label>
+                <label><input type="checkbox" name="style" value="boho">Boho</label>
+                <label><input type="checkbox" name="style" value="vintage">Vintage</label>
+                <label><input type="checkbox" name="style" value="minimalist">Minimalist</label>
+                <label><input type="checkbox" name="style" value="soft">Soft / Romantic</label>
+                <label><input type="checkbox" name="style" value="street">Street Wear</label>
+                <label><input type="checkbox" name="style" value="unsure">I'm not sure yet!</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Modesty Preferences (check all that apply)</legend>
+                <label><input type="checkbox" name="modesty" value="long_sleeves">Long sleeves</label>
+                <label><input type="checkbox" name="modesty" value="3_4_sleeves">3/4 sleeves</label>
+                <label><input type="checkbox" name="modesty" value="covered_neckline">Covered neckline</label>
+                <label><input type="checkbox" name="modesty" value="covered_shoulders">Covered shoulders</label>
+                <label><input type="checkbox" name="modesty" value="midi_maxi">Midi or Maxi length</label>
+                <label><input type="checkbox" name="modesty" value="loose_pants">Loose-fitting pants</label>
+                <label><input type="checkbox" name="modesty" value="layers">Layered looks</label>
+                <label><input type="checkbox" name="modesty" value="unsure">I need help figuring this out!</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorite Colors or Patterns</legend>
+                <textarea name="colors">Beige, pink and plaid...</textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>What's your budget?</legend>
+                <select name="budget">
+                    <option value="thrift">Thrift / Low Budget</option>
+                    <option value="low">Low ($)</option>
+                    <option value="mid">Mid ($$)</option>
+                    <option value="high">High ($$$)</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label>Anything else I should know?</label>
+                <textarea name="notes" placeholder="Fashion struggles, style goals, or must-haves!"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Request Styling Assistance">
+        </form>
+    </main>
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2025 Angel Beach &bull; Brigit Mejia &bull; All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
