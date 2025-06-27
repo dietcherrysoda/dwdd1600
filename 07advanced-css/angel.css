@@ -41,7 +41,7 @@ header span {
     nav .active a {
         background-color: #3c2f2f;
         color: #F6D8D6;
-        background-image: linear-gradient(to bottom, #D6C2A9, #3c2f2f);
+        background-image: radial-gradient(circle,rgba(214, 194, 169, 1) 0%, rgba(60, 47, 47, 1) 100%);
     }
 }
 
