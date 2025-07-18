@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Brigit Mejia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Promotes a Vacation Stay at Juayúa, El Salvador">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="vacation.css">
+    <title>Vacation Destination at Juayúa El Salvador</title>
+</head>
+
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Angel Beach Travels</span>
+    </header>
+
+    <!-- start the navagation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Explore</a></li>
+            <li><a href="packages.html">Our Packages</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+            <li><a href="video.html">More</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the main content -->
+    <main>
+        <h1>Contact Us</h1>
+
+        <h2>Plan Your Escape Today!</h2>
+        <h3>Ready to experience Juayúa your way? Let us create a personalized itinerary tailored to your travel style,
+            budget, and dreams.</h3>
+
+        <form method="get" class="plan" action="confirmation.html">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Phone Number*<input type="tel" name="phone" required></label>
+                <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Trip Details</legend>
+
+                <label for="start-date">Preferred Start Date:*</label>
+                <input type="date" id="start-date" name="start-date" required>
+                <label for="end-date">Preferred End Date:*</label>
+                <input type="date" id="end-date" name="end-date" required>
+
+                <label>Number of Travelers</label>
+                <select name="number">
+                    <option value="little">1-5</option>
+                    <option value="mid">5-10</option>
+                    <option value="many">10-20+</option>
+                </select>
+
+                <label>Type of Travelers</label>
+                <label><input type="radio" name="travelers" value="solo">Solo</label>
+                <label><input type="radio" name="travelers" value="couple">Couple</label>
+                <label><input type="radio" name="travelers" value="family/freinds">Family/Freinds</label>
+                <label><input type="radio" name="travelers" value="group">Group</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What kind of experience are you looking for?</legend>
+                <label><input type="checkbox" name="experience" value="nature">Nature & Adventure</label>
+                <label><input type="checkbox" name="experience" value="culture">Culture</label>
+                <label><input type="checkbox" name="experience" value="rest">Rest & Wellness</label>
+                <label><input type="checkbox" name="experience" value="food">Food & Culinary</label>
+                <label><input type="checkbox" name="experience" value="markets">Art & Markets</label>
+                <label><input type="checkbox" name="experience" value="other">Other (please specify)</label>
+                <textarea name="other"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Budget Range</legend>
+                <select name="budget">
+                    <option value="low">$500-$1,000</option>
+                    <option value="mid">$1,000-$2,000</option>
+                    <option value="high">$2,000+</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Include a Package (optional)</legend>
+                <select name="package">
+                     <option value="none">None</option>
+                    <option value="package 1">La Naturaleza Package</option>
+                    <option value="package 2">La Cultura Package</option>
+                    <option value="package 3">Café con Pan Package</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label>Additional Notes or Preferences</label>
+                <textarea name="notes" placeholder="City-based, or rural only locations"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Start Planning My Trip">
+        </form>
+
+        <h2>Need Help, Comments, or Concerns?</h2>
+        <address>
+            Contact Us<br>
+            Call <a href="tel:8011237777">801-123-7777</a> or Email <a
+                href="mailto:angelteam@abtravels.com">angelteam@abtravels.com</a>
+        </address>
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2025 Angel Beach Travels &bull; Brigit Mejia &bull; All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
